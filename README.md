@@ -2,7 +2,7 @@
 
 Compatibility layer for pg and pg2.
 
-# Features
+## Features
 
 ### Switching between `pg` and `pg2`
 UniPg automatically delegates to `pg` for OTP >= 23 and fallback to `pg2` for OTP < 23.
