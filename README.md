@@ -8,18 +8,20 @@ Compatibility layer for pg and pg2.
 
 ## Features
 
-### Switching between `pg` and `pg2`
-UniPg automatically delegates to `pg` for OTP >= 23 and fallback to `pg2` for OTP < 23.
+### 1. Unified API on top of `pg` and `pg2`.
+UniPg provides API similar to `pg` and implemented on top of
+* `pg` for OTP >= 23.
+* `pg2` for OTP < 23.
 
-### Implicit scope, group creation.
+### 2. Emulates `scope` for `pg2`
+Emulates `pg`'s `scope` parameter for `pg2`.
+
+### 3. Implicit scope and group creation.
 * `:pg.start_link(scope)` is automatically called for scope access.
 * `:pg2.create(group)` is automatically called for group access.
 
 Calling scope/group creation everytime introduces performance penalty. 
-But it's so small(< 10ns) that most applications can ignore it for programmers's convenience.
-
-### `scope` for `pg2`
-Emulates `pg`'s `scope` API for `pg2`.
+But it's so small(< 10ns) that most applications can ignore it for the sake of convenience.
 
 ## Usage
 
