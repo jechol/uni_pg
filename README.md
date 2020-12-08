@@ -63,7 +63,7 @@ by adding `uni_pg` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:uni_pg, "~> 0.1.0"}
+    {:uni_pg, "~> 0.2.0"}
   ]
 end
 ```
