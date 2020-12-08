@@ -1,8 +1,7 @@
 
 [![mix test](https://github.com/jechol/uni_pg/workflows/mix%20test/badge.svg)](https://github.com/jechol/uni_pg/actions)
-[![Hex version badge](https://img.shields.io/hexpm/v/uni_pg.svg)](https://hex.pm/packages/uni_pg)
-[![License badge](https://img.shields.io/hexpm/l/uni_pg.svg)](https://github.com/jechol/uni_pg/blob/master/LICENSE.md)
-
+[![Hex version badge](https://img.shields.io/hexpm/v/uni_pg)](https://hex.pm/packages/uni_pg)
+[![License badge](https://img.shields.io/hexpm/l/uni_pg)](https://github.com/jechol/uni_pg/blob/master/LICENSE.md)
 # UniPg
 
 Compatibility layer for pg and pg2.
