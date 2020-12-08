@@ -21,6 +21,6 @@ defmodule UniPgTest do
     [^this] = UniPg.get_members(:scope1, :group1)
     [^this] = UniPg.get_local_members(:scope1, :group1)
 
-    [:group1, :group2] = UniPg.which_groups(:scope1)
+    [:group1, :group2] = UniPg.which_groups(:scope1) |> Enum.sort()
   end
 end
