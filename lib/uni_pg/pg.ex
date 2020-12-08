@@ -27,7 +27,7 @@ defmodule UniPg.Pg do
   # Util
 
   defp ensure_started(scope) do
-    # Duplicated :pg.start_link() has no effect and takes only 1ns.
-    :pg.start_link(scope)
+    # Duplicated :pg.start() has no effect and takes only 1ns.
+    :pg.start(scope)
   end
 end

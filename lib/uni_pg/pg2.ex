@@ -43,7 +43,7 @@ defmodule UniPg.Pg2 do
 
   defp ensure_started() do
     # Duplicated :pg2.start_link() has no effect and takes only 1ns.
-    :pg2.start_link()
+    :pg2.start()
   end
 
   defp ensure_group_created(scope, group) do
