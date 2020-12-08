@@ -6,6 +6,24 @@
 
 Compatibility layer for pg and pg2.
 
+## Why?
+
+`pg` was introduced at OTP 23, and `pg2` is deprecated and will be removed at OTP 24.
+
+| OTP version | 22 | 23 | 24 |
+|-------------|----|----|----|
+| pg          | X  | O  | O  |
+| pg2         | O  | O  | X  |
+
+
+So, 
+* If your code depends on `pg`, then it won't work for OTP < 23.
+* If your code depends on `pg2`, then it won't work for OTP >= 24.
+
+This means that you shouldn't directly depend on `pg` or `pg2` if you wish your code to work with wide range of OTP versions. 
+
+So we need compatibility layer to cover both cases.
+
 ## Features
 
 ### 1. Unified API on top of `pg` and `pg2`.
