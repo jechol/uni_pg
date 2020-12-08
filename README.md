@@ -17,20 +17,7 @@ But it's so small(< 10ns) that most applications can ignore it for programmers's
 ### `scope` for `pg2`
 Emulates `pg`'s `scope` API for `pg2`.
 
-### Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `uni_pg` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:uni_pg, "~> 0.1.0"}
-  ]
-end
-```
-
-# Usage
+## Usage
 
 ```console
 iex(1)> UniPg.join(:scope1, :group1, [self()])
@@ -43,4 +30,16 @@ iex(4)> UniPg.leave(:scope1, :group1, [self()])
 :ok
 iex(5)> UniPg.get_members(:scope1, :group1)    
 []
+```
+## Installation
+
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+by adding `uni_pg` to your list of dependencies in `mix.exs`:
+
+```elixir
+def deps do
+  [
+    {:uni_pg, "~> 0.1.0"}
+  ]
+end
 ```
