@@ -1,4 +1,8 @@
 defmodule UniPg.Pg2 do
+  def start_link(_scope) do
+    {:ok, spawn_link(Process, :sleep, [:infinity])}
+  end
+
   def join(scope, group, pids) when is_list(pids) do
     ensure_group_created(scope, group)
 

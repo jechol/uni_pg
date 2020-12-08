@@ -1,4 +1,8 @@
 defmodule UniPg.Pg do
+  def start_link(scope) do
+    :pg.start_link(scope)
+  end
+
   def join(scope, group, pids) when is_list(pids) do
     ensure_started(scope)
     :pg.join(scope, group, pids)
