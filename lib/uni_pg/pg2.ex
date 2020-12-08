@@ -42,13 +42,13 @@ defmodule UniPg.Pg2 do
   # Utils
 
   defp ensure_started() do
-    # Duplicated :pg2.start_link() has no effect and takes only 1ns.
+    # Duplicated :pg2.start_link() has no effect and takes only 5us.
     :pg2.start()
   end
 
   defp ensure_group_created(scope, group) do
     ensure_started()
-    # Duplicated :pg2.create() has no effect and takes only 1ns.
+    # Duplicated :pg2.create() has no effect and takes only 5us.
     :pg2.create(namespace(scope, group))
   end
 
