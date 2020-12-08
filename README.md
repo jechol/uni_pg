@@ -34,7 +34,7 @@ UniPg provides API similar to `pg` and implemented on top of
 * `:pg2.create(group)` is called before group access.
 
 Calling scope/group creation everytime introduces performance penalty. 
-But it's so small(< 10ns on my MBP 2015) that most applications can ignore it for the sake of convenience.
+But it's so small(< 5μs on my MBP 2015) that most applications can ignore it for the sake of convenience.
 
 ## Usage
 
